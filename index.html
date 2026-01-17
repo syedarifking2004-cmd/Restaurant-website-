@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DelishBite Restaurant</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <h1 class="logo">DelishBite</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="modeToggle" class="mode-btn">🌙</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content" data-animate>
+            <h2>Welcome to <span>DelishBite</span></h2>
+            <p>Where every bite brings joy to your soul.</p>
+            <a href="#menu" class="btn">Explore Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <h2 data-animate>Our Special Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-item" data-animate>
+                <img src="images/menu1.jpg" alt="Pasta">
+                <h3>Italian Pasta</h3>
+                <p>Rich creamy Alfredo sauce with herbs.</p>
+                <span>$12</span>
+            </div>
+
+            <div class="menu-item" data-animate>
+                <img src="images/menu2.jpg" alt="Pizza">
+                <h3>Classic Pizza</h3>
+                <p>Freshly baked with mozzarella and basil.</p>
+                <span>$10</span>
+            </div>
+
+            <div class="menu-item" data-animate>
+                <img src="images/menu3.jpg" alt="Burger">
+                <h3>Beef Burger</h3>
+                <p>Grilled to perfection with cheese and fries.</p>
+                <span>$9</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content" data-animate>
+            <img src="images/chef.jpg" alt="Chef">
+            <div>
+                <h2>About Us</h2>
+                <p>
+                    At DelishBite, we serve happiness on a plate. Our chefs use the
+                    freshest ingredients to craft mouthwatering dishes you’ll love.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 data-animate>Book a Table</h2>
+        <form id="bookingForm" data-animate>
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <input type="number" id="guests" placeholder="No. of Guests" required />
+            <input type="date" id="date" required />
+            <button type="submit" class="btn">Reserve Now</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 DelishBite Restaurant | Designed by Syed Arif💻</p>
+    </footer>
+</body>
+
+</html>
